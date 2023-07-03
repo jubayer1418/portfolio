@@ -1,8 +1,9 @@
 "use client";
 import AnimatedText from "@/components/AnimatedText";
+import { GithubIcon, LinkedInIcon, TwitterIcon } from "@/components/Icons";
 import Layout from "@/components/Layout";
 import Skills from "@/components/Skills";
-import { useInView, useMotionValue, useSpring } from "framer-motion";
+import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import profilePic from "../../../public/images/profile/developer-pic-2.jpg";
@@ -39,11 +40,11 @@ const page = () => {
               Biography
             </h2>
             <p className="font-medium">
-              Hi, I'm CodeBucks, a web developer and UI/UX designer with a
-              passion for creating beautiful, functional, and user-centered
-              digital experiences. With 4 years of experience in the field. I am
-              always looking for new and innovative ways to bring my clients'
-              visions to life.
+              Hi, I'm jubayer, a full stack web developer and UI/UX designer
+              with a passion for creating beautiful, functional, and
+              user-centered digital experiences. With 2 years of experience in
+              the field. I am always looking for new and innovative ways to
+              bring my clients' visions to life.
             </p>
             <p className="font-medium my-8">
               - I believe that design is about more than just making things look
@@ -51,12 +52,40 @@ const page = () => {
               enjoyable experiences for users.
             </p>
             <p className="font-medium">
-              - Whether I'm working on a website, mobile app, or other digital
-              product, I bring my commitment to design excellence and
-              user-centered thinking to every project I work on. I look forward
-              to the opportunity to bring my skills and passion to your next
-              project.
+              - Whether I'm working on a website, or other digital product, I
+              bring my commitment to design excellence and user-centered
+              thinking to every project I work on. I look forward to the
+              opportunity to bring my skills and passion to your next project.
             </p>
+            <nav className="flex items-center justify-center flex-wrap mt-2">
+              <motion.a
+                href="https://www.facebook.com/sk01787351418"
+                target={"_blank"}
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-6 mr-3 sm:mx-1"
+              >
+                <TwitterIcon></TwitterIcon>
+              </motion.a>
+              <motion.a
+                href="https://github.com/jubayer1418"
+                target={"_blank"}
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-6 mr-3 sm:mx-1"
+              >
+                <GithubIcon></GithubIcon>
+              </motion.a>
+              <motion.a
+                href="https://www.linkedin.com/in/mohammad-jubayer1418/"
+                target={"_blank"}
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-6 mr-3 sm:mx-1"
+              >
+                <LinkedInIcon></LinkedInIcon>
+              </motion.a>
+            </nav>
           </div>
           <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 xl:col-span-4 md:order-1 md:col-span-8">
             <div className="absolute top-0 -right-3 h-[103%] -z-10 w-[102%] rounded-[2rem] bg-dark" />

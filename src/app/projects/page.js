@@ -3,7 +3,9 @@ import { GithubIcon } from "@/components/Icons";
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import Link from "next/link";
-import project1 from "../../../public/images/crypto-screener-cover-image.jpg";
+import project1 from "../../../public/images/Screenshot_30.png";
+import project2 from "../../../public/images/Screenshot_32.png";
+import project3 from "../../../public/images/Screenshot_33.png";
 const Project = ({ title, type, img, link, github }) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative xs:p-4">
@@ -61,16 +63,33 @@ const page = () => {
           className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
         />
         <div className="grid grid-cols-12 gap-24 mt-14">
-          <div className="col-span-6 sm:col-span-12">
+          <div className="col-span-6 sm:col-span-12 hover:shadow-2xl hover:shadow-yellow-200">
             <Project
-              title={"Crypto Screener Application"}
-              img={project1}
-              link="/"
-              github="/"
-              type={"Featured Projext"}
+              title={"THE MARVEL TOY Application"}
+              img={project2}
+              link="https://marvel-toy.web.app/"
+              github="https://github.com/jubayer1418/marvel-toy"
+              type={" Project"}
             />
           </div>
-          <div className="col-span-6 sm:col-span-12">project-2</div>
+          <div className="col-span-6 sm:col-span-12 hover:shadow-2xl hover:shadow-yellow-200">
+            <Project
+              title={"CHINESE CHEF Application"}
+              img={project3}
+              link="https://chef-56035.web.app/"
+              github="https://github.com/jubayer1418/chef"
+              type={" Project"}
+            />
+          </div>
+          <div className="col-span-6 sm:col-span-12 hover:shadow-2xl hover:shadow-yellow-200">
+            <Project
+              title={"THE MARTIAL ART Application"}
+              img={project1}
+              link="https://assinment-12-52bf6.web.app/"
+              github="https://github.com/jubayer1418/Martial-art"
+              type={" Project"}
+            />
+          </div>
         </div>
       </Layout>
     </div>

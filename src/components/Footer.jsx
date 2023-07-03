@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex items-center lg:py-2">
           Build With <span className="text-primary text-2xl px-1">&#9825;</span>
           <Link className="underline underline-offset-2" href="/">
-            CodeBucks
+            Jubayer
           </Link>
         </div>
         <Link
